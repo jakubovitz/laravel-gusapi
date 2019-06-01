@@ -1,0 +1,30 @@
+{
+    "name": "synalek/laravel-gusapi",
+    "description": "Laravel Framework - Service provider for the Gus Api",
+    "keywords": ["laravel", "gus", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Synalek",
+            "email": "syynalek@gmail.com"
+        }
+    ],
+    "require": {
+        "gusapi/gusapi": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Synalek\\GusApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Synalek\\GusApi\\ServiceProvider"
+            ],
+            "aliases": {
+                "GusApi": "Synalek\\GusApi\\Facade"
+            }
+        }
+    }
+}
